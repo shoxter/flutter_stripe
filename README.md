@@ -1,14 +1,24 @@
 # flutter_stripe
 
-A new flutter plugin project.
+A lightweight Flutter tool to tokenize credit card information for stripe
+
+[] iOS Support <br>
+[X] Android Support
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.io/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+USAGE:
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+FlutterStripe.getToken(
+  publishableKey: "YOUR STRIPE PUBLISHABLE KEY",
+  cardNumber: "CC #",
+  expiryMonth: "CC Expiry Month",
+  expiryYear: "CC Expiry Year",
+  cvc: "CC CVC Code"
+);
+```
+
+Please note that this returns `Future<String>` so you must `await` or wait for the call to resolve before getting the token.
+
+
