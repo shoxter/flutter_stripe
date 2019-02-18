@@ -2,7 +2,7 @@
 
 A lightweight Flutter tool to tokenize credit card information for stripe
 
-[ ] iOS Support <br>
+[X] iOS Support <br>
 [X] Android Support
 
 ## Getting Started
