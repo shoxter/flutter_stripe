@@ -23,7 +23,7 @@ public class FlutterStripePlugin implements FlutterPlugin, MethodCallHandler {
   public static void registerWith(Registrar registrar) {
     r = registrar;
     final MethodChannel channel = new MethodChannel(registrar.messenger(), "flutter_stripe");
-	FlutterStripPlugin plugin = new FlutterStripePlugin();
+	FlutterStripePlugin plugin = new FlutterStripePlugin();
     channel.setMethodCallHandler(plugin);
   }
 
