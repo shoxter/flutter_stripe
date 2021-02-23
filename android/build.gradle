@@ -34,5 +34,5 @@ android {
 }
 
 dependencies {
-    implementation 'com.stripe:stripe-android:6.1.2'
+    implementation 'com.stripe:stripe-android:16.1.1'
 }
